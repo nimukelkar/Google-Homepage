@@ -1,0 +1,154 @@
+body{
+    margin: 0;
+    font-family: arial, sans-serif;
+    font: size 0.9em;/* Relative to actual font size.*/
+
+
+}
+a{
+    margin: 5px;
+    text-decoration: none; /*Underline */
+    color:black;
+
+
+}
+a:hover{ 
+    text-decoration: underline;
+}
+
+nav{
+    display: flex;/* Use of a flex box*/
+    justify-content:space-between;
+}
+.header-nav{
+    display:flex;
+    align-items: center; /*Centers in y direction*/
+    padding-left: 20px;
+    margin-right: 10px;
+}
+ul > a, ul> img{ /*Any a element within ul or img also     */
+    padding:0 8px
+}
+.header-img:hover{
+    box-shadow: 0 0 10px 0 gainsboro;
+    border-radius: 20px; /*Round the corners*/
+    cursor:pointer;
+}
+section{
+    display:flex;
+    align-items: center;
+    flex-direction: column; /* If flex direction is column then use align items center     */
+    margin-top: 5vh; /* 5 percent of viewport*/
+
+
+}
+@font-face{
+    font-family: 'Production Sans';
+    font-style: normal;
+    font-weight:400;
+    src: url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+}
+h1{ 
+    font-family: Product Sans; /* Google font*/
+    font-size: 5.5em;
+
+}
+.my-input-container{
+    display:flex;
+    justify-content:space-between;
+    width:600px;
+    height:35px;
+    border:1px solid gainsboro;
+
+}
+.my-input-container > input{
+    flex-grow: 1;
+    border:none;
+    outline:none;
+
+}
+.my-input-container:hover{
+    box-shadow: 0 0 10px  gainsboro;
+}
+img:hover{
+    cursor: pointer;
+}
+.my-button-container{ 
+    padding-top: 53px
+}
+button{
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    border:none;
+    height:36px;
+    padding:0 20px;
+    margin: 0 4px
+
+}
+button:hover{
+    cursor: pointer;
+    box-shadow:0 0 10px gainsboro;
+}
+
+footer{
+    background-color: #f2f2f2;
+    position:fixed;
+    bottom:0;
+    width:100vw;
+
+}
+#footer-left{
+    display:flex;
+    justify-self:start;
+    padding: left 20px;
+    align-items: center;
+
+}
+#footer-right{
+    display:flex;
+    justify-content: flex-end;
+    margin: right 20px;
+    align-items: center;
+
+}
+@media(max-width:630 px){
+    #footer-nav{
+        justify-content: center;
+    }
+    #footer-right{
+        justify-content:center;
+    }
+    .my-input-container{ 
+        width:95vw;
+    }
+
+}
+@media(max-height:522 px){
+    body{
+        overflow-x:hidden;
+    }
+    section{
+        margin-bottom:20px;
+    }
+    footer{
+        position:relative;
+    }
+}
+@media(max-height:570 px)and(max-width:620px){
+    body{
+        overflow-x:hidden;
+    }
+    section{
+        margin-bottom:13 px;
+
+    }
+    footer{
+        position:relative;
+    }
+
+
+}
+
+
+
+
